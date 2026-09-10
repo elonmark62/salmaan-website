@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website-ka Salmaan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="menu" aria-label="Menu-ga bogga">
+      <a href="#home">Home</a>
+      <a href="#about">Wax iga saabsan</a>
+      <a href="#contact">Nala soo xiriir</a>
+      <button id="theme-button" type="button">Madow / Iftiin</button>
+    </nav>
+    <main id="home" class="card">
+      <p class="eyebrow">SALAAN, ADUUNKA!</p>
+      <h1>Magacaygu waa Salmaan.</h1>
+      <p class="intro">
+        Waxaan ahay macallin coding.
+      </p>
+      <h2>Waxyaabaha aan jeclahay</h2>
+      <ul>
+        <li>Barashada coding</li>
+        <li>Kubadda cagta</li>
+        <li>Akhriska</li>
+      </ul>
+      <section id="about" class="about">
+        <div class="avatar" aria-hidden="true">💻</div>
+        <div>
+          <h2>Wax iga saabsan</h2>
+          <p>
+            Waxaan ahay qof hadda bilaabay barashada coding. Maalin kasta waxaan baranayaa wax cusub.
+          </p>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <h2>Nala soo xiriir</h2>
+        <form id="contact-form">
+          <label for="name">Magacaaga</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="note">Farriintaada</label>
+          <textarea id="note" name="note" rows="4" required></textarea>
+
+          <button type="submit">Dir farriinta</button>
+        </form>
+        <p id="form-message" aria-live="polite"></p>
+      </section>
+      <a href="https://www.google.com" target="_blank">Google booqo</a>
+      <button id="hello-button">Igu salaam</button>
+      <p id="message" aria-live="polite"></p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
