@@ -58,6 +58,13 @@ h1 {
   line-height: 1.6;
 }
 
+.hero-image {
+  display: block;
+  width: 100%;
+  margin: 24px 0;
+  border-radius: 16px;
+}
+
 button {
   margin-top: 12px;
   padding: 12px 20px;
@@ -130,6 +137,35 @@ a {
   margin-top: 28px;
 }
 
+.skills {
+  margin-top: 28px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.skill-card {
+  padding: 18px;
+  border-radius: 14px;
+  background: #eef2ff;
+}
+
+.skill-card span {
+  font-size: 1.8rem;
+}
+
+.skill-card h3 {
+  margin: 10px 0 6px;
+}
+
+.skill-card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
 form {
   display: grid;
   gap: 8px;
@@ -178,6 +214,10 @@ body.dark-mode .about {
   background: #312e81;
 }
 
+body.dark-mode .skill-card {
+  background: #312e81;
+}
+
 body.dark-mode input,
 body.dark-mode textarea {
   border-color: #a78bfa;
@@ -206,5 +246,9 @@ body.dark-mode textarea {
 
   .about {
     align-items: flex-start;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
